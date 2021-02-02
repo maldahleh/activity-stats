@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    var startDate = Date()
+    
     var body: some View {
-        Text("Hello, world!")
+        Text(startDate.toString())
             .padding()
     }
 }
@@ -17,5 +19,14 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+extension Date {
+    func toString() -> String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        
+        return formatter.string(from: self)
     }
 }

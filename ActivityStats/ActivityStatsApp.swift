@@ -9,9 +9,20 @@ import SwiftUI
 
 @main
 struct ActivityStatsApp: App {
+    @State var startDate = Date()
+    
+    let healthDataProvider = HealthDataProvider()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(startDate: startDate)
+                .onAppear(perform: { self.requestHealthDataAccess() })
+        }
+    }
+    
+    func requestHealthDataAccess() {
+        healthDataProvider.requestHealthAccess { res, err in
+            startDate = healthDataProvider.earliestDataDate()
         }
     }
 }

@@ -13,6 +13,8 @@
 		674C661A25C9FF060080E9B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 674C661925C9FF060080E9B1 /* Preview Assets.xcassets */; };
 		674C662525C9FF060080E9B1 /* ActivityStatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C662425C9FF060080E9B1 /* ActivityStatsTests.swift */; };
 		674C663025C9FF060080E9B1 /* ActivityStatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C662F25C9FF060080E9B1 /* ActivityStatsUITests.swift */; };
+		674C664325CA0C1B0080E9B1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674C664225CA0C1B0080E9B1 /* HealthKit.framework */; };
+		674C664625CA0C900080E9B1 /* HealthDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C664525CA0C900080E9B1 /* HealthDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 		674C662B25C9FF060080E9B1 /* ActivityStatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActivityStatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		674C662F25C9FF060080E9B1 /* ActivityStatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityStatsUITests.swift; sourceTree = "<group>"; };
 		674C663125C9FF060080E9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		674C664025CA0C1B0080E9B1 /* ActivityStats.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ActivityStats.entitlements; sourceTree = "<group>"; };
+		674C664225CA0C1B0080E9B1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		674C664525CA0C900080E9B1 /* HealthDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				674C664325CA0C1B0080E9B1 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +85,7 @@
 				674C662325C9FF060080E9B1 /* ActivityStatsTests */,
 				674C662E25C9FF060080E9B1 /* ActivityStatsUITests */,
 				674C661025C9FF050080E9B1 /* Products */,
+				674C664125CA0C1B0080E9B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +102,8 @@
 		674C661125C9FF050080E9B1 /* ActivityStats */ = {
 			isa = PBXGroup;
 			children = (
+				674C664425CA0C7D0080E9B1 /* Health */,
+				674C664025CA0C1B0080E9B1 /* ActivityStats.entitlements */,
 				674C661225C9FF050080E9B1 /* ActivityStatsApp.swift */,
 				674C661425C9FF050080E9B1 /* ContentView.swift */,
 				674C661625C9FF060080E9B1 /* Assets.xcassets */,
@@ -128,6 +137,22 @@
 				674C663125C9FF060080E9B1 /* Info.plist */,
 			);
 			path = ActivityStatsUITests;
+			sourceTree = "<group>";
+		};
+		674C664125CA0C1B0080E9B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				674C664225CA0C1B0080E9B1 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		674C664425CA0C7D0080E9B1 /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				674C664525CA0C900080E9B1 /* HealthDataProvider.swift */,
+			);
+			path = Health;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				674C661525C9FF050080E9B1 /* ContentView.swift in Sources */,
+				674C664625CA0C900080E9B1 /* HealthDataProvider.swift in Sources */,
 				674C661325C9FF050080E9B1 /* ActivityStatsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ActivityStats/ActivityStats.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ActivityStats/Preview Content\"";
 				DEVELOPMENT_TEAM = BK6SYNX968;
@@ -439,6 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ActivityStats/ActivityStats.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ActivityStats/Preview Content\"";
 				DEVELOPMENT_TEAM = BK6SYNX968;

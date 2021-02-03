@@ -16,6 +16,7 @@
 		674C664325CA0C1B0080E9B1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674C664225CA0C1B0080E9B1 /* HealthKit.framework */; };
 		674C664625CA0C900080E9B1 /* HealthDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C664525CA0C900080E9B1 /* HealthDataProvider.swift */; };
 		674C664C25CA1ADC0080E9B1 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C664B25CA1ADC0080E9B1 /* HeaderView.swift */; };
+		67700AD625CB3A6E00A6EB63 /* DataRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67700AD525CB3A6E00A6EB63 /* DataRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		674C664225CA0C1B0080E9B1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		674C664525CA0C900080E9B1 /* HealthDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataProvider.swift; sourceTree = "<group>"; };
 		674C664B25CA1ADC0080E9B1 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		67700AD525CB3A6E00A6EB63 /* DataRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,10 +162,19 @@
 		674C664A25CA1ACB0080E9B1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				67700AD425CB3A6000A6EB63 /* Data */,
 				674C661425C9FF050080E9B1 /* ContentView.swift */,
 				674C664B25CA1ADC0080E9B1 /* HeaderView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		67700AD425CB3A6000A6EB63 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				67700AD525CB3A6E00A6EB63 /* DataRow.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +308,7 @@
 			files = (
 				674C661525C9FF050080E9B1 /* ContentView.swift in Sources */,
 				674C664625CA0C900080E9B1 /* HealthDataProvider.swift in Sources */,
+				67700AD625CB3A6E00A6EB63 /* DataRow.swift in Sources */,
 				674C661325C9FF050080E9B1 /* ActivityStatsApp.swift in Sources */,
 				674C664C25CA1ADC0080E9B1 /* HeaderView.swift in Sources */,
 			);

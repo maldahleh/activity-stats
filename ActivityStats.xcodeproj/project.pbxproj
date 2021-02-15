@@ -17,6 +17,7 @@
 		674C664625CA0C900080E9B1 /* HealthDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C664525CA0C900080E9B1 /* HealthDataProvider.swift */; };
 		674C664C25CA1ADC0080E9B1 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C664B25CA1ADC0080E9B1 /* HeaderView.swift */; };
 		67700AD625CB3A6E00A6EB63 /* DataRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67700AD525CB3A6E00A6EB63 /* DataRow.swift */; };
+		6799454725DB3048008DEFA6 /* DataBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6799454625DB3048008DEFA6 /* DataBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		674C664525CA0C900080E9B1 /* HealthDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataProvider.swift; sourceTree = "<group>"; };
 		674C664B25CA1ADC0080E9B1 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		67700AD525CB3A6E00A6EB63 /* DataRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRow.swift; sourceTree = "<group>"; };
+		6799454625DB3048008DEFA6 /* DataBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				67700AD525CB3A6E00A6EB63 /* DataRow.swift */,
+				6799454625DB3048008DEFA6 /* DataBox.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				67700AD625CB3A6E00A6EB63 /* DataRow.swift in Sources */,
 				674C661325C9FF050080E9B1 /* ActivityStatsApp.swift in Sources */,
 				674C664C25CA1ADC0080E9B1 /* HeaderView.swift in Sources */,
+				6799454725DB3048008DEFA6 /* DataBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

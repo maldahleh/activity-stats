@@ -21,6 +21,9 @@ struct DataBox: View {
     }
 }
 
+extension DataBox: Hashable {
+}
+
 struct DataBox_Previews: PreviewProvider {
     static var previews: some View {
         DataBox(dataPoint: "Test", value: "123")
